@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Usuário</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="usuarios.html" class="ativo">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <div class="cabecalho-pagina">
+      <h1>Usuário</h1>
+      <a href="usuario-detalhe.html" class="btn btn-primario">+ Cadastrar usuário</a>
+    </div>
+
+    <form class="barra-busca">
+      <input type="search" name="busca" placeholder="Buscar por nome ou e-mail">
+      <select name="funcao">
+        <option value="">Todas as funções</option>
+        <option value="cliente">Cliente</option>
+        <option value="funcionario">Funcionário</option>
+        <option value="gerente">Gerente</option>
+      </select>
+      <button type="submit" class="btn btn-secundario">Buscar</button>
+    </form>
+
+    <table class="tabela-listagem">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Função</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ana Souza</td>
+          <td>ana.souza@email.com</td>
+          <td>Cliente</td>
+          <td><span class="badge badge-ativo">Ativo</span></td>
+          <td>
+            <a href="usuario-detalhe.html" class="btn btn-texto">Ver / Editar</a>
+            <button type="button" class="btn btn-texto btn-perigo-texto">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carlos Lima</td>
+          <td>carlos.lima@email.com</td>
+          <td>Funcionário</td>
+          <td><span class="badge badge-ativo">Ativo</span></td>
+          <td>
+            <a href="usuario-detalhe.html" class="btn btn-texto">Ver / Editar</a>
+            <button type="button" class="btn btn-texto btn-perigo-texto">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Paula Ramos</td>
+          <td>paula.ramos@email.com</td>
+          <td>Cliente</td>
+          <td><span class="badge badge-inativo">Inativo</span></td>
+          <td>
+            <a href="usuario-detalhe.html" class="btn btn-texto">Ver / Editar</a>
+            <button type="button" class="btn btn-texto btn-perigo-texto">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

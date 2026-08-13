@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Thor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="pets.html" class="ativo">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <a href="pets.html" class="link-voltar">&larr; Voltar para pets</a>
+
+    <div class="cabecalho-pagina">
+      <h1>Thor</h1>
+      <div class="acoes-topo">
+        <button type="button" class="btn btn-secundario">Editar</button>
+        <button type="button" class="btn btn-perigo">Excluir pet</button>
+      </div>
+    </div>
+
+    <section class="secao secao-pet-perfil">
+      <img src="https://placehold.co/200x200" alt="Foto de Thor" class="foto-pet-grande">
+      <dl class="lista-caracteristicas">
+        <div><dt>Tipo</dt><dd>Cachorro</dd></div>
+        <div><dt>Raça</dt><dd>Labrador</dd></div>
+        <div><dt>Tamanho</dt><dd>Grande</dd></div>
+        <div><dt>Proprietário</dt><dd>Ana Souza</dd></div>
+      </dl>
+    </section>
+
+    <section class="secao">
+      <h2>Histórico de reservas</h2>
+      <table class="tabela-listagem">
+        <thead>
+          <tr>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12/08/2026</td>
+            <td>18/08/2026</td>
+            <td><span class="badge badge-finalizada">Finalizada</span></td>
+            <td><a href="reserva-detalhe.html" class="btn btn-texto">Ver reserva</a></td>
+          </tr>
+          <tr>
+            <td>02/05/2026</td>
+            <td>06/05/2026</td>
+            <td><span class="badge badge-finalizada">Finalizada</span></td>
+            <td><a href="reserva-detalhe.html" class="btn btn-texto">Ver reserva</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

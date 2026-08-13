@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Pets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="pets.html" class="ativo">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <div class="cabecalho-pagina">
+      <h1>Pets</h1>
+      <a href="pet-novo.html" class="btn btn-primario">+ Cadastrar pet</a>
+    </div>
+
+    <form class="barra-busca">
+      <input type="search" name="busca" placeholder="Buscar por nome, tipo ou raça">
+      <select name="tamanho">
+        <option value="">Todos os tamanhos</option>
+        <option value="pequeno">Pequeno</option>
+        <option value="medio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+      <button type="submit" class="btn btn-secundario">Buscar</button>
+    </form>
+
+    <div class="grade-cartoes">
+      <a href="pet-detalhe.html" class="cartao-pet">
+        <img src="https://placehold.co/200x150" alt="Foto de Thor">
+        <div class="cartao-pet-info">
+          <h3>Thor</h3>
+          <p>Cachorro &middot; Labrador &middot; Grande</p>
+          <p class="cartao-pet-dono">Dono: Ana Souza</p>
+        </div>
+      </a>
+
+      <a href="pet-detalhe.html" class="cartao-pet">
+        <img src="https://placehold.co/200x150" alt="Foto de Luna">
+        <div class="cartao-pet-info">
+          <h3>Luna</h3>
+          <p>Gato &middot; Siamês &middot; Pequeno</p>
+          <p class="cartao-pet-dono">Dono: Carlos Lima</p>
+        </div>
+      </a>
+
+      <a href="pet-detalhe.html" class="cartao-pet">
+        <img src="https://placehold.co/200x150" alt="Foto de Mel">
+        <div class="cartao-pet-info">
+          <h3>Mel</h3>
+          <p>Cachorro &middot; Poodle &middot; Médio</p>
+          <p class="cartao-pet-dono">Dono: Paula Ramos</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Configurações</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html" class="ativo">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <h1>Configurações</h1>
+
+    <form class="grade-formulario">
+      <div class="campo">
+        <label for="valor-diaria">Valor da diária</label>
+        <input type="text" id="valor-diaria" name="valor-diaria" value="R$ 60,00">
+      </div>
+
+      <div class="campo">
+        <label for="vagas">Número de vagas disponíveis</label>
+        <input type="number" id="vagas" name="vagas" value="20" min="0">
+      </div>
+
+      <div class="acoes-formulario">
+        <button type="submit" class="btn btn-primario">Salvar configurações</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

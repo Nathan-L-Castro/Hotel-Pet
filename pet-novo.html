@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Cadastrar pet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="pets.html" class="ativo">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <a href="pets.html" class="link-voltar">&larr; Voltar para pets</a>
+
+    <h1>Cadastrar pet</h1>
+
+    <form class="grade-formulario" action="pets.html" method="get">
+      <div class="campo">
+        <label for="nome">Nome do pet</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="tipo">Tipo de animal</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione</option>
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="raca">Raça</label>
+        <input type="text" id="raca" name="raca">
+      </div>
+
+      <div class="campo">
+        <label for="tamanho">Tamanho</label>
+        <select id="tamanho" name="tamanho" required>
+          <option value="">Selecione</option>
+          <option value="pequeno">Pequeno</option>
+          <option value="medio">Médio</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+
+      <!-- Campo exclusivo do funcionário/gerente -->
+      <div class="campo">
+        <label for="proprietario">Proprietário</label>
+        <select id="proprietario" name="proprietario" required>
+          <option value="">Selecione o cliente</option>
+          <option value="ana">Ana Souza</option>
+          <option value="carlos">Carlos Lima</option>
+          <option value="paula">Paula Ramos</option>
+        </select>
+      </div>
+
+      <div class="campo campo-largo">
+        <label for="foto">Foto do pet</label>
+        <input type="file" id="foto" name="foto">
+      </div>
+
+      <div class="acoes-formulario">
+        <button type="submit" class="btn btn-primario">Cadastrar pet</button>
+        <a href="pets.html" class="btn btn-secundario">Cancelar</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

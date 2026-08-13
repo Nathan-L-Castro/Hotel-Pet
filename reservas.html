@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Reservas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html" class="ativo">Reservas</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <div class="cabecalho-pagina">
+      <h1>Reservas</h1>
+      <a href="reserva-nova.html" class="btn btn-primario">+ Nova reserva</a>
+    </div>
+
+    <form class="barra-busca">
+      <input type="search" name="busca" placeholder="Buscar por pet, cliente ou período">
+      <select name="status">
+        <option value="">Todos os status</option>
+        <option value="pendente">Pendente</option>
+        <option value="andamento">Em andamento</option>
+        <option value="finalizada">Finalizada</option>
+      </select>
+      <button type="submit" class="btn btn-secundario">Buscar</button>
+    </form>
+
+    <table class="tabela-listagem">
+      <thead>
+        <tr>
+          <th>Pet</th>
+          <th>Cliente</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Status</th>
+          <th>Valor total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thor</td>
+          <td>Ana Souza</td>
+          <td>12/08/2026</td>
+          <td>18/08/2026</td>
+          <td><span class="badge badge-andamento">Em andamento</span></td>
+          <td>R$ 360,00</td>
+          <td><a href="reserva-detalhe.html" class="btn btn-texto">Ver reserva</a></td>
+        </tr>
+        <tr>
+          <td>Luna</td>
+          <td>Carlos Lima</td>
+          <td>05/08/2026</td>
+          <td>10/08/2026</td>
+          <td><span class="badge badge-finalizada">Finalizada</span></td>
+          <td>R$ 300,00</td>
+          <td><a href="reserva-detalhe.html" class="btn btn-texto">Ver reserva</a></td>
+        </tr>
+        <tr>
+          <td>Mel</td>
+          <td>Paula Ramos</td>
+          <td>20/08/2026</td>
+          <td>25/08/2026</td>
+          <td><span class="badge badge-pendente">Pendente</span></td>
+          <td>R$ 300,00</td>
+          <td><a href="reserva-detalhe.html" class="btn btn-texto">Ver reserva</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>

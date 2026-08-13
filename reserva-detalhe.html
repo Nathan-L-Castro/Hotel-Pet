@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pet | Reserva de Thor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="reservas.html" class="logo">Hotel Pet</a>
+
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="reservas.html" class="ativo">Reservas</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="usuarios.html">Usuário</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+      </ul>
+    </nav>
+
+    <a href="perfil.html" class="perfil-topo">
+      <img src="https://placehold.co/40x40" alt="Foto de perfil">
+      <span>Nome do Gerente</span>
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <a href="reservas.html" class="link-voltar">&larr; Voltar para reservas</a>
+
+    <div class="cabecalho-pagina">
+      <h1>Reserva de Thor</h1>
+      <!-- Como visão do Gerente: reserva finalizada continua editável -->
+      <span class="badge badge-finalizada">Finalizada</span>
+    </div>
+
+    <section class="secao">
+      <h2>Dados da reserva</h2>
+      <form class="grade-formulario">
+        <div class="campo">
+          <label for="pet">Pet</label>
+          <input type="text" id="pet" name="pet" value="Thor">
+        </div>
+        <div class="campo">
+          <label for="cliente">Cliente</label>
+          <input type="text" id="cliente" name="cliente" value="Ana Souza">
+        </div>
+        <div class="campo">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" value="2026-08-12">
+        </div>
+        <div class="campo">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" value="2026-08-18">
+        </div>
+        <div class="campo">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="pendente">Pendente</option>
+            <option value="andamento">Em andamento</option>
+            <option value="finalizada" selected>Finalizada</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="valor">Valor total</label>
+          <input type="text" id="valor" name="valor" value="R$ 360,00" readonly>
+        </div>
+      </form>
+    </section>
+
+    <section class="secao">
+      <h2>Anotações da estadia</h2>
+      <textarea class="area-texto" rows="4" placeholder="Anotações feitas pela equipe durante a estadia do animal">Thor está se alimentando bem e brincou bastante no parque hoje.</textarea>
+    </section>
+
+    <section class="secao">
+      <h2>Fotos da estadia</h2>
+      <div class="galeria-imagens">
+        <img src="https://placehold.co/150x150" alt="Foto da estadia 1">
+        <img src="https://placehold.co/150x150" alt="Foto da estadia 2">
+        <button type="button" class="btn-adicionar-imagem">+ Adicionar foto</button>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Recibo</h2>
+      <div class="bloco-arquivo">
+        <span>recibo-thor-agosto.pdf</span>
+        <a href="#" class="btn btn-texto">Visualizar</a>
+      </div>
+    </section>
+
+    <div class="acoes-formulario">
+      <button type="submit" class="btn btn-primario">Salvar alterações</button>
+      <button type="button" class="btn btn-perigo">Excluir reserva</button>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Hotel Pet</p>
+  </footer>
+
+</body>
+</html>
